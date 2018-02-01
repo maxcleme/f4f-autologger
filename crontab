@@ -1,0 +1,3 @@
+0 14 * * * root /home/f4f-login.sh -u $F4F_USERNAME -p $F4F_PASSWORD >> /var/log/f4f.log 2>&1
+# An empty line is required at the end of this file for a valid cron file.
+
