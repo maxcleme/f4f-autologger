@@ -47,9 +47,12 @@ if [[ $RESULT =~ $RGX ]]
 	        if [[ -z "$HELLO" ]]
 			then
 				echo "`date`: Failed to login"
+				exit 1
 			else
 				echo "`date`: Login successful"
+				exit 0
 		fi	
 	else
 		echo "`date`: Couldn't retrieve form key"
+		exit 1
 fi
